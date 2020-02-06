@@ -1,39 +1,174 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <link rel="icon" type="image/png" href="images/head.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--link rel="icon" type="image/png" href="images/head.png"-->
     <title>Sid Lin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
-  <header>
-    <ul>
-      <li><a href="index.html" class = "active">Home</a></li>
-      <!--li><a href="training.html">Training</a></li-->
-      <!--li><a href="about.html">About</a></li-->
-    </ul>
-  </header>
-
   <body>
-     <div class="box">
-      <img src="images/composite2.jpg" alt="Composite." class="box-img">
-      <h1>Sid Lin</h1>
-    </div>
+    <header>
+      <div class="menu-toggler">
+        <div class="bar half start"></div>
+        <div class="bar"></div>
+        <div class="bar half end"></div>
+      </div>
+      <nav class="top-nav">
+        <ul class="nav-list">
+          <li>
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Projects</a>
+          </li>     
+        </ul>
+      </nav>
 
-    <footer>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/sydneylin12/">
-            <i class="fa fa-linkedin-square"></i>
-        </a></li>
-        <li><a href="mailto:sydney.lin12@gmail.com">
-            <i class="fa fa-envelope"></i>
-        </a></li>
-        <li><a href="https://github.com/sydneylin12">
-            <i class="fa fa-github-square"></i>
-        </a></li>
-      </ul>
-    </footer>
+      <div class="landing-text">
+        <img src="images/sid.jpg">
+        <h1>Sid Lin</h1>
+        <h6>University of Minnesota class of 2021.</h6>
+        <h6>Aspiring software engineer and game designer.</h6>
+      </div>
+    </header>
 
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-details">
+          <div class="about-heading">
+            <h1>About Me</h1>
+          </div>
+          <p>
+            Hi, I'm Sid! I am a junior at the University of Minnesota studying Computer Science. I have a a unique set of interests: app development, game development, fitness, cooking, and playing music.
+            I'm a certified personal trainer by the ISSA, and also a competitive powerlifter. Some of the stuff on this site is related to fitness, and I've tried my best to combine all these hobbies.
+            You can only learn so much in school, so I took upon myself to teach myself some neat things in my free time. Please, have a look at what I spend my time and effort on below!
+          </p>
+          <div class="social-media">
+            <ul class="nav-list">
+              <li>
+                <a href="#" class="icon-link">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-link">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-link">
+                  <i class="fab fa-github-square"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div> 
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Skills</h1>
+        </div>
+        <div class="my-skills">
+          <div class="skill">
+            <div class="icon-container">
+              <i class="fab fa-java"></i>
+            </div>
+            <h1>Java</h1>
+          </div>
+          <div class="skill">
+            <div class="icon-container">
+              <i class="fab fa-js-square"></i>
+            </div>
+            <h1>JavaScript</h1>
+          </div>
+          <div class="skill">
+            <div class="icon-container">
+              <i class="fab fa-unity"></i>
+            </div>
+            <h1>Unity (C#)</h1>
+          </div>
+          <div class="skill">
+            <div class="icon-container">
+              <i class="fab fa-swift"></i>
+            </div>
+            <h1>Swift</h1>
+          </div>
+          <div class="skill">
+            <div class="icon-container">
+              <i class="fab fa-python"></i>
+            </div>
+            <h1>Python</h1>
+          </div>
+          <div class="skill">
+            <div class="icon-container">
+              <i class="fab fa-html5"></i>
+            </div>
+            <h1>HTML/CSS</h1>
+          </div>
+          <div class="skill">
+            <div class="icon-container">
+              <i class="fab fa-github"></i>
+            </div>
+            <h1>Github</h1>
+          </div>
+          <div class="skill">
+            <div class="icon-container">
+              <i class="fab fa-windows"></i>
+            </div>
+            <h1>Office</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Projects</h1>
+        </div>
+      </div>
+      <div class="projects-item">
+        <div class="projects-img has-margin-right">
+          <img src="images/PRCamIcon.png" alt="">
+        </div>
+        <div class="projects-description">
+          <h6>Application Development</h6>
+          <h1>PR Cam</h1>
+          <p>
+            Film videos with music in the background. Made with Swift.
+          </p>
+          <a href="https://apps.apple.com/us/app/pr-cam/id1493299604?ls=1" class="cta">View Details ></a>
+        </div>
+      </div>
+      <div class="projects-item">
+        <div class="projects-description has-margin-right">
+          <h6>Application Development</h6>
+          <h1>KiloCalc</h1>
+          <p>
+            A calculator that calculates the total weight of calibrated kilogram plates, in pounds. Made with Swift.
+          </p>
+          <a href="https://apps.apple.com/us/app/kilocalc/id1485134775" class="cta">View Details ></a>
+        </div>
+        <div class="projects-img">
+          <img src="images/KiloCalcIcon.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!--SCRIPTS GO HERE-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/94d3ae4546.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
   </body>
+
 </html>
