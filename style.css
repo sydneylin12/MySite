@@ -1,5 +1,4 @@
-/* Sid Lin CSS */
-
+/* Begin global/general CSS */
 *{
   margin: 0;
   padding: 0;
@@ -9,28 +8,31 @@
 html{
   font-size: 10px;
   font-family: Helvetica, sans-serif;
-  color: rgb(0, 0, 0);
+  color: #FFFFFF;
 }
 
 body{
   width: 100%;
   height: 100%;
-  background: url("images/background3.png") no-repeat center fixed;
-  background-size: cover;
+  background-color: rgb(28, 28, 30);
 }
 
 section{
-  padding: 6rem;
+  width: 75%;
+  height: 40%;
+  border-radius: 5rem;
+  margin: 20rem auto; /* Center the element */
+  background-color: rgb(44, 44, 46);
+  padding: 3rem;
 }
 
-a{
+a{ /* a = a link */
   text-decoration: none;
-  color: rgb(0, 0, 0);
 }
 
 p{
-  font-size: 1.8rem;
-  font-weight: 300;
+  font-size: 2em;
+  font-weight: 100;
 }
 
 img{
@@ -42,9 +44,10 @@ header{
   height: 100vh;
 }
 
-/* Start Reusabele Classes */
+/* End global/general CSS */
+/* Start reusabele classes */
+
 .container{
-  widows: 90%;
   max-width: 120rem;
   height: 100%;
   margin: 0 auto;
@@ -53,51 +56,29 @@ header{
 
 .section-heading{
   text-align: center;
-  margin: 5rem;
+  margin: 3rem;
 }
 
+/* Largest heading */
 .section-heading h1{
-  font-size: 3.5rem;
-  color: rgb(0, 0, 0);
+  font-size: 5rem;
+  color: rgb(255, 69, 58);
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 200;
   position: relative;
-  margin-bottom: 1rem;
 }
-
-.section-heading h1::before,
-.section-heading h1::after{
-  content: "";
-  position: absolute;
-  bottom: -0.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgb(0, 0, 0);
-}
-
-.section-heading h1::before{
-  width: 10rem;
-  height: 3px;
-  border-radius: 0.8rem;
-}
-
-/* For the circle
-.section-heading h1::after{
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 100%;
-  bottom: -1rem;
-} */
 
 .section-heading h6{
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 100;
 }
 
 .has-margin-right{
   margin-right: 5rem;
 }
+
 /* End Reusable */
+/* Begin navigation menu */
 
 .top-nav{
   width: 100%;
@@ -105,7 +86,7 @@ header{
   position: fixed;
   top: -100vh;
   z-index: 50;
-  background-color: rgba(220, 220, 220, 1);
+  background-color: rgb(44, 44, 46);
   border-bottom-left-radius: 100%;
   border-bottom-right-radius: 100%;
   transition: all 650ms cubic-bezier(1, 0, 0, 1);
@@ -134,7 +115,7 @@ li{
 
 .nav-link:hover,
 .nav-link:focus{
-  background: linear-gradient(to top, #5a9cde, #269bf7);
+  background: rgb(255, 69, 58);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -164,7 +145,7 @@ li{
 }
 
 .bar{
-  background: linear-gradient(to top, #5a9cde, #269bf7);
+  background: rgb(255, 69, 58);
   width: 100%;
   height: 4px;
   border-radius: 0.8rem;
@@ -195,6 +176,9 @@ li{
   transform: rotate(-90deg) translateX(-.8rem);
 }
 
+/* End navigation menu */
+/* Begin header page */
+
 .landing-text{
   position: absolute;
   top: 50%;
@@ -206,59 +190,31 @@ li{
 }
 
 .landing-text h1{
-  font-size: 10rem;
+  font-size: 6rem;
   font-family: Helvetica, sans-serif;
-  color: #5a9cde;
+  color: #FFFFFF;
   padding: 1rem;
   user-select: none;
+  font-weight: 200;
 }
 
 .landing-text h6{
+  color: #FFFFFF;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 100;
 }
 
 .landing-text img{
   width: 20rem;
   height: 20rem;
-  border-radius: 50%;
-  border-width: 0.2rem;
-  border-color: rgb(0, 0, 0);
+  border-radius: 100%;
 }
 
-.about .container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about-heading{
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 0;
-  margin-bottom: 6rem;
-}
-
-.about-heading h1{
-  font-size: 10rem;
-  opacity: 25%;
-}
-
-.about-heading h6{
-  font-size: 5rem;
-  opacity: 75%;
-  font-weight: 300;
-}
+/* End header page */
+/* Begin about*/
 
 .about p{
   text-align: center;
-}
-
-.profile-img{
-  flex: 1;
-  margin-right: 5rem;
-  max-width: 30rem;
-  max-height: 30rem;
 }
 
 .about-details{
@@ -266,14 +222,14 @@ li{
 }
 
 .social-media{
-  margin-top: 5rem;
+  margin: 1rem;
 }
 
 .social-media i{
-  color: rgb(87, 87, 87);
-  font-size: 5rem;
+  color: #FFFFFF;
+  font-size: 7rem;
   transition: color 650ms;
-  padding: 1rem;
+  padding: 1rem
 }
 
 .fa-facebook-square:hover{
@@ -288,11 +244,12 @@ li{
   color: #9114c2;
 }
 
+/* End about*/
+
 .my-skills{
-  margin-top: 10rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 2.5rem;
+  grid-gap: 1rem;
   text-align: center;
 }
 
@@ -301,32 +258,32 @@ li{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .skill h1{
   text-transform: uppercase;
-  letter-spacing: 2px;
-  margin: 2rem -2px 2rem 0;
+  margin: 1rem;
+  font-weight: 100;
+  color: #FFFFFF;
 }
 
 .icon-container{
   width: 10rem;
   height: 10rem;
-  border: 3px solid rgb(150, 150, 150);
-  border-radius: 2rem;
-  background-color: rgb(220, 220, 220);
+  background-color: #FFFFFF;
+  border-radius: 25%;
   margin-bottom: 2rem;
   display: flex;
-  transform: rotate(45deg);
 }
 
 .icon-container i{
-  color: #5a9cde;
+  color: rgb(255, 69, 58);
   font-size: 5rem;
   margin: auto;
-  transform: rotate(-45deg);
 }
+
+/* begin projects */
 
 .projects-item{
   display: flex;
@@ -343,11 +300,6 @@ li{
   max-width: 20rem;
   max-height: 20rem;
   border-radius: 25%;
-  /*
-  border-color: rgb(200, 200, 200);
-  border-width: 0.5rem;
-  border-style: solid; */
-  flex: 1; /*- not sure if i need this */
 }
 
 .projects-description{
@@ -358,15 +310,16 @@ li{
 
 .projects-description h1{
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 200;
   margin: 1rem 0;
+  color: #FFFFFF;
 }
 
 .projects-description h6{
   font-size: 1.5rem;
   text-transform: uppercase;
-  font-weight: 300;
-  opacity: 75%;
+  font-weight: 100;
+  color: rgb(102, 102, 107);
 }
 
 .projects-description .cta{
@@ -378,8 +331,52 @@ li{
   transition: color 650ms;
 }
 
-.projects-description .cta:hober{
+.projects-description .cta:hover{
   color: #3d6996
 }
 
+/* Begin footer*/
+
+.copyright{
+  width: 100%;
+  text-align: center;
+  background-color: rgb(44, 44, 46);
+  padding: 2rem 0;
+  position: relative;
+}
+
+.copyright p{
+  font-size: 2rem;
+}
+
+.up{
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  background-color: #FFFFFF;
+  top: -2.5rem;
+  right: 5rem;
+  border-radius: 100%;
+  display: flex;
+  animation: pulse 2s infinite;
+  cursor: pointer;
+}
+
+.up i{
+  color: rgb(255, 69, 58);
+  font-size: 2rem;
+  margin: auto;
+}
+
+@keyframes pulse{
+  0%{
+    box-shadow: 0 0 0 0 rgba(255, 69, 58, 0.99);
+  }
+  70%{
+    box-shadow: 0 0 0 2rem rgba(255, 69, 58, 0);
+  }
+  100%{
+    box-shadow: 0 0 0 0 rgba(255, 69, 58, 0);
+  }
+}
 

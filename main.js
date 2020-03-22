@@ -3,4 +3,9 @@ $(document).ready(function(){
         $(this).toggleClass("open");
         $(".top-nav").toggleClass("open");
     })
+
+    AOS.init({
+        easing: "ease",
+        duration: 1800
+    });
 });
