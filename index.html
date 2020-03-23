@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <!--meta http-equiv="refresh" content="3" -->
+    <!--meta http-equiv="refresh" content="3"-->
     <title>Sid Lin</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -11,6 +11,9 @@
   </head>
 
   <body>
+    <div class="home" id="home">
+      <!-- Used for link purposes only-->
+    </div>
     <header>
       <div class="menu-toggler">
         <div class="bar half start"></div>
@@ -20,22 +23,27 @@
       <nav class="top-nav">
         <ul class="nav-list">
           <li>
-            <a href="index.html" class="nav-link">Home</a>
+            <a href="#home" class="nav-link">Home</a>
           </li>
           <li>
-            <a href="#" class="nav-link">About</a>
+            <a href="#about" class="nav-link">About</a>
           </li>
           <li>
-            <a href="#" class="nav-link">Projects</a>
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" class="nav-link">Projects</a>
           </li>     
         </ul>
       </nav>
 
       <div class="landing-text">
         <img src="images/sid.jpg">
-        <h1>Sid Lin</h1>
-        <h6>University of Minnesota class of 2021.</h6>
-        <h6>Aspiring software engineer and game designer.</h6>
+        <h1 data-aos="flip-up">Sid Lin</h1>
+        <h6 data-aos="flip-up">
+          University of Minnesota class of 2021. <br>
+          Aspiring software engineer and game designer.
+        </h6>
       </div>
     </header>
 
@@ -46,7 +54,7 @@
             <h1>About Me</h1>
           </div>
           <p>
-            Hi, I'm Sid! I am a junior at the University of Minnesota studying Computer Science. I have a a unique set of interests: app development, game development, fitness, cooking, and playing music.
+            Hi, I'm Sydney Lin, but you can call me Sid! I'm a junior at the University of Minnesota studying Computer Science. I have a a unique set of interests: app development, game development, fitness, cooking, and playing music.
             I'm a certified personal trainer by the ISSA, and also a competitive powerlifter. Some of the stuff on this site is related to fitness, and I've tried my best to combine all these hobbies.
             You can only learn so much in school, so I took upon myself to teach myself some neat things in my free time. Please, have a look at what I spend my time and effort on below!
           </p>
@@ -73,55 +81,55 @@
       </div>
     </section>
 
-    <section class="services" id="services" data-aos="fade-up">
+    <section class="skills" id="skills">
       <div class="container">
         <div class="section-heading">
           <h1>Skills</h1>
         </div>
         <div class="my-skills">
-          <div class="skill">
+          <div class="skill" data-aos="fade-up" data-aos-delay="0">
             <div class="icon-container">
               <i class="fab fa-java"></i>
             </div>
             <h1>Java</h1>
           </div>
-          <div class="skill">
+          <div class="skill" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-container">
               <i class="fab fa-js-square"></i>
             </div>
             <h1>JavaScript</h1>
           </div>
-          <div class="skill">
+          <div class="skill" data-aos="fade-up" data-aos-delay="400">
             <div class="icon-container">
               <i class="fab fa-unity"></i>
             </div>
             <h1>Unity (C#)</h1>
           </div>
-          <div class="skill">
+          <div class="skill" data-aos="fade-up" data-aos-delay="600">
             <div class="icon-container">
               <i class="fab fa-swift"></i>
             </div>
             <h1>Swift</h1>
           </div>
-          <div class="skill">
+          <div class="skill" data-aos="fade-up" data-aos-delay="800">
             <div class="icon-container">
               <i class="fab fa-python"></i>
             </div>
             <h1>Python</h1>
           </div>
-          <div class="skill">
+          <div class="skill" data-aos="fade-up" data-aos-delay="1000">
             <div class="icon-container">
               <i class="fab fa-html5"></i>
             </div>
             <h1>HTML/CSS</h1>
           </div>
-          <div class="skill">
+          <div class="skill" data-aos="fade-up" data-aos-delay="1200">
             <div class="icon-container">
               <i class="fab fa-github"></i>
             </div>
             <h1>Github</h1>
           </div>
-          <div class="skill">
+          <div class="skill" data-aos="fade-up" data-aos-delay="1400">
             <div class="icon-container">
               <i class="fab fa-windows"></i>
             </div>
@@ -145,7 +153,9 @@
           <h6>Application Development</h6>
           <h1>PR Cam</h1>
           <p>
-            Film videos with music in the background. Made with Swift.
+            Film videos with music in the background. 
+            More features include trimming videos, toggle flash, swap camera, and a full settings page.
+            Made with Swift.
           </p>
           <a href="https://apps.apple.com/us/app/pr-cam/id1493299604?ls=1" class="cta">View Details ></a>
         </div>

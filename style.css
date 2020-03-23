@@ -9,6 +9,7 @@ html{
   font-size: 10px;
   font-family: Helvetica, sans-serif;
   color: #FFFFFF;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -23,7 +24,6 @@ section{
   border-radius: 5rem;
   margin: 20rem auto; /* Center the element */
   background-color: rgb(44, 44, 46);
-  padding: 3rem;
 }
 
 a{ /* a = a link */
@@ -31,8 +31,9 @@ a{ /* a = a link */
 }
 
 p{
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: 100;
+  padding: 3rem;
 }
 
 img{
@@ -48,7 +49,7 @@ header{
 /* Start reusabele classes */
 
 .container{
-  max-width: 120rem;
+  width: 100%;
   height: 100%;
   margin: 0 auto;
   position: relative;
@@ -56,25 +57,24 @@ header{
 
 .section-heading{
   text-align: center;
-  margin: 3rem;
 }
 
 /* Largest heading */
 .section-heading h1{
-  font-size: 5rem;
+  font-size: 4rem;
   color: rgb(255, 69, 58);
   text-transform: uppercase;
   font-weight: 200;
   position: relative;
-}
-
-.section-heading h6{
-  font-size: 1.5rem;
-  font-weight: 100;
+  padding-top: 3rem;
 }
 
 .has-margin-right{
   margin-right: 5rem;
+}
+
+.hidden{
+  visibility: hidden;
 }
 
 /* End Reusable */
@@ -87,8 +87,7 @@ header{
   top: -100vh;
   z-index: 50;
   background-color: rgb(44, 44, 46);
-  border-bottom-left-radius: 100%;
-  border-bottom-right-radius: 100%;
+  border-radius: 75%;
   transition: all 650ms cubic-bezier(1, 0, 0, 1);
 }
 
@@ -106,18 +105,16 @@ li{
 }
 
 .nav-link{
-  color: rgb(100, 100, 100);
+  color: #FFFFFF;
   font-family: Helvetica, sans-serif;
-  font-size: 5rem;
-  padding: 1rem;
+  font-size: 4rem;
+  font-weight: 200;
+  padding: 4rem;
   transition: color 650ms;
 }
 
-.nav-link:hover,
-.nav-link:focus{
-  background: rgb(255, 69, 58);
-  -webkit-background-clip: text;
-  color: transparent;
+.nav-link:hover{
+  color: rgb(255, 69, 58);
 }
 
 .top-nav.open{
@@ -181,10 +178,9 @@ li{
 
 .landing-text{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 25%;
   width: 100%;
+  margin: auto;
   text-align: center;
   z-index: 1;
 }
@@ -222,14 +218,14 @@ li{
 }
 
 .social-media{
-  margin: 1rem;
+  padding-bottom: 3rem;
 }
 
 .social-media i{
   color: #FFFFFF;
   font-size: 7rem;
   transition: color 650ms;
-  padding: 1rem
+  padding: 0 2rem;
 }
 
 .fa-facebook-square:hover{
@@ -248,7 +244,8 @@ li{
 
 .my-skills{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  padding: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   grid-gap: 1rem;
   text-align: center;
 }
@@ -289,29 +286,32 @@ li{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5rem;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .projects-item:last-child{
-  margin-bottom: 0;
+  padding-bottom: 3rem;
 }
 
 .projects img{
-  max-width: 20rem;
-  max-height: 20rem;
+  max-width: 17rem;
+  max-height: 17rem;
   border-radius: 25%;
 }
 
 .projects-description{
   /* This keeps it centered */
-  max-width: 50%;
+  padding: 0rem;
+  max-width: 70%;
   flex: 1;
 }
 
 .projects-description h1{
   font-size: 3rem;
   font-weight: 200;
-  margin: 1rem 0;
+  padding: 1rem 0;
   color: #FFFFFF;
 }
 
@@ -320,6 +320,10 @@ li{
   text-transform: uppercase;
   font-weight: 100;
   color: rgb(102, 102, 107);
+}
+
+.projects-description p{
+  padding: 0;
 }
 
 .projects-description .cta{
