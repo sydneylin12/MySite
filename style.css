@@ -25,7 +25,7 @@ section{
   width: 70%;
   height: 50%;
   margin: 40vh auto; /* Center the element, first number is margin up/down*/
-  background-color: rgba(44, 44, 46, 1);
+  background-color: rgba(44, 44, 46, 0.35);
   /* border: solid; */
   border-width: 0.5rem;
   border-radius: 5rem;
@@ -68,19 +68,12 @@ header{
 .section-heading h1{
   position: relative;
   font-size: 4rem;
-  color: rgb(255, 69, 58);
+  color: #FFFFFF;
   text-transform: uppercase;
   font-weight: 200;
   /* Inner space of the title*/
   padding: 2rem;
-
-  background: linear-gradient(90deg, #2c2c2e, #fff, #2c2c2e);
-  background-repeat: no-repeat;
-  background-size: 90%;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: shine 4s linear infinite;
+  animation: glow 2500ms linear infinite 2000ms;
 }
 
 .has-margin-right{
@@ -115,7 +108,7 @@ header{
   color: #FFFFFF;
   font-size: 2rem;
   font-weight: 100;
-  background-color: rgba(44, 44, 46, 0.2);
+  background-color: rgba(44, 44, 46, 0.35);
   border-radius: 5rem;
   width: fit-content;
   padding: 1rem 2rem;
@@ -198,7 +191,7 @@ header{
 }
 
 .icon-container i{
-  color: rgb(255, 69, 58);
+  color: rgb(100, 100, 100);
   font-size: 5rem;
   margin: auto;
 }
@@ -209,7 +202,12 @@ header{
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  padding: 2rem 3rem;
+  padding: 3rem 3rem;
+}
+
+/* Last child extra padding */
+.projects-item.last{
+  padding-bottom: 7rem;
 }
 
 .projects img{
@@ -236,7 +234,7 @@ header{
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 100;
-  color: rgb(102, 102, 107);
+  color: rgb(200, 200, 200);
 }
 
 .projects-description p{
@@ -260,7 +258,7 @@ header{
 .copyright{
   width: 100%;
   text-align: center;
-  background-color: rgb(44, 44, 46);
+  background-color: rgba(44, 44, 46, 0.35);
   padding: 2rem 0;
   position: relative;
 }
@@ -287,7 +285,7 @@ header{
 }
 
 .up i{
-  color: rgb(255, 69, 58);
+  color: rgb(102, 102, 107);
   font-size: 2rem;
   margin: auto;
 }
@@ -295,13 +293,13 @@ header{
 /* For the up icon animation */
 @keyframes pulse{
   0%{
-    box-shadow: 0 0 0 0 rgba(255, 69, 58, 0.99);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.99);
   }
   70%{
-    box-shadow: 0 0 0 2rem rgba(255, 69, 58, 0);
+    box-shadow: 0 0 0 2rem rgba(255, 255, 255, 0);
   }
   100%{
-    box-shadow: 0 0 0 0 rgba(255, 69, 58, 0);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
   }
 }
 
@@ -317,12 +315,6 @@ header{
 @keyframes glow{
   40%{
     text-shadow: 0 0 10px #FFFFFF;
-  }
-}
-
-@keyframes redGlow{
-  40%{
-    text-shadow: 0 0 10px rgb(255, 69, 58);
   }
 }
 
