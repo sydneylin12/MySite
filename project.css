@@ -1,0 +1,35 @@
+.project-group{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-gap: 1rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.my-project{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-gap: 1rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.project{
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+.project img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 25%;
+    background-color: #FFFFFF;
+}
+
+.project h1{ /* text under the icon squares */
+    margin: 1rem auto;
+    font-weight: 100;
+    color: #FFFFFF;
+}
+
